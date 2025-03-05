@@ -1,0 +1,34 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: "Fira Mono", monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#black_screen {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+}
+#black_screen > div {
+    width: 50%;
+    height: 20px;
+    border: 4px solid #54B338;
+    border-radius: 15px;
+}
+#loading {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    background-color: #54B338;
+    border-radius: 15px;
+}
+#typing {
+    color: #54B338;
+    font-size: x-large;
+}

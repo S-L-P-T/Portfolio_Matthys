@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="black_screen">
+        <p id="typing">&#8203;</p>
+        <div>
+            <div id="loading"></div>
+        </div>
+    </div>
+
+    <header id="about">
+        <h1><span class="blue">title = “portfolio de matthys”</span></h1>
+        <img src="../img/Photo Matthys Couleur.jpg" alt="photo de profile">
+        <p><span class="grey">/* Bonjour, je m’appelle Matthys Tachon-Panafieu.<br>Je suis en 3ème année du double cursus ingénieur informatique et designer global à CY-Tech. A travers ce portfolio je vais vous faire vivre l’expérience de l’alliance entre l’informatique et le design.<br>Bonne découverte ;) */</span></p>
+    </header>
+
+    <section>
+        <h1><span class="purple">class</span> <span class="orange">Matthys</span><span class="grey">:</span></h1>
+    </section>
+
+    <section id=contact>
+        <h2><span class="purple">def</span> <span class="orange">contact()</span><span class="grey">:</span></h2>
+        <div>
+            <div>
+                <img src="../img/🦆 icon _linkedin_.png" alt="">
+                <p><span class="grey">Linkedin:</span> <a href="#">matthys-tachon-panafieu</a></p>
+            </div>
+            <div>
+                <img id="Instagram" src="../img/🦆 icon _instagram_.png" alt="">
+                <p><span class="grey">Instagram:</span> <a href="#">@matthys.tp</a> ?</p>
+            </div>
+            <div>
+                <img src="../img/🦆 icon _inbox_.png" alt="">
+                <p><span class="grey">Mail:</span> <a href="#">matthys.tachonpanafieu@gmail.com</a></p>
+            </div>
+        </div>
+        <button class="download">Télécharger CV</button>
+        <!-- <ul>
+            <li><img src="../img/🦆 icon _linkedin_.png" alt=""><p>Linkedin : matthys-tachon-panafieu</p></li>
+            <li><img class="Instagram" src="../img/🦆 icon _instagram_.png" alt=""><p>Instagram : @matthys.tp</p></li>
+            <li><img src="../img/🦆 icon _inbox_.png" alt=""><p>Linkedin : matthys-tachon-panafieu</p></li>
+        </ul> -->
+    </section>
+
+    <section>
+        <h2><span class="purple">def</span> <span class="orange">langages()</span><span class="grey">:</span></h2>
+        <div>
+            <p><span class="grey">Français :</span> <span class="blue">95/100</span></p>
+            <div class="progressbar_border">
+                <div id="francais"></div>
+            </div>
+            <p><span class="grey">Anglais :</span> <span class="blue">70/100</span></p>
+            <div class="progressbar_border">
+                <div id="anglais"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2><span class="purple">def</span> <span class="orange">competences()</span><span class="grey">:</span></h2>
+        <div id="informatique">
+            <p><span class="grey">Java :</span> <span class="blue">75/100</span></p>
+            <div class="progressbar_border">
+                <div id="java"></div>
+            </div>
+            <p><span class="grey">Python :</span> <span class="blue">90/100</span></p>
+            <div class="progressbar_border">
+                <div id="python"></div>
+            </div>
+            <p><span class="grey">Html :</span> <span class="blue">100/100</span></p>
+            <div class="progressbar_border">
+                <div id="html"></div>
+            </div>
+            <p><span class="grey">Css :</span> <span class="blue">95/100</span></p>
+            <div class="progressbar_border">
+                <div id="css"></div>
+            </div>
+            <p><span class="grey">Javascript :</span> <span class="blue">75/100</span></p>
+            <div class="progressbar_border">
+                <div id="javascript"></div>
+            </div>
+        </div>
+        <div>
+            <p><span class="grey">Communication visuelle :</span> <span class="blue">75/100</span></p>
+            <div class="progressbar_border">
+                <div id="com_visuelle"></div>
+            </div>
+            <p><span class="grey">Analyse et synthèse :</span> <span class="blue">80/100</span></p>
+            <div class="progressbar_border">
+                <div id="analyse"></div>
+            </div>
+            <p><span class="grey">Créativité :</span> <span class="blue">90/100</span></p>
+            <div class="progressbar_border">
+                <div id="creativite"></div>
+            </div>
+            <p><span class="grey">Organisation :</span> <span class="blue">79/100</span></p>
+            <div class="progressbar_border">
+                <div id="organisation"></div>
+            </div>
+            <p><span class="grey">Leadership :</span> <span class="blue">75/100</span></p>
+            <div class="progressbar_border">
+                <div id="leadership"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2><span class="purple">def</span> <span class="orange">project_1()</span><span class="grey">:</span></h2>
+        <div>
+            <p class="titre_projet">Titre du projet: 2048</p>
+            <img src="../img/2048.png" alt="">
+            <p class="collaborateurs">Collaborateurs:<br>- Benjamin Corral<br>- Ariana Sauvan</p>
+            <p class="paragraph">Lors de ce projet nous devions concevoir le jeu du 2048 avec le language de programmation <span class="red">python</span> et de la librairie tkinter. Le principe du 2048 est de faire fusionner les mêmes nombre entre eu dans un tableau 4x4 avec un système de gravité que le joueur controle. Pendant ce projet nous avons décidés d’augmenter la dificulté en proposant plusieurs modes en plus du 2048 clasique. Nous avons donc ajouté un mode multijoueur, un mode 16x16 et nous avons rajouté un dark mode pour améliorer la personalisation de son 2048.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2><span class="purple">def</span> <span class="orange">project_2()</span><span class="grey">:</span></h2>
+        <div>
+            <p class="titre_projet">Titre du projet: Desolate Space</p>
+            <img src="../img/Desolate Space.png" alt="">
+            <p class="collaborateurs">Collaborateurs:<br>- Benjamin Corral<br>- Ariana Sauvan</p>
+            <p class="paragraph">Lors de ce projet nous devions concevoir un jeu de survie et de terraformation sur une autre planète. Le jeu devais pouvoir etre joué depuis le web sur une page internet. Le but de ce jeu est de récupérer des ressources pour pouvoir créer des objetts aidant à la survie tout en augmentant l’indice de terraformation avec le temps ou à l’aide d’objets. Nous avons utilisé 3 languages informatiques qui sont : le <span class="red">HTML</span>, le <span class="red">CSS</span> et le <span class="red">JavaScript</span>. Si vous souhaitez consulter le jeu il est disponible <a href="#">ici</a></p>
+        </div>
+    </section>
+
+    <section>
+        <h2><span class="purple">def</span> <span class="orange">project_3()</span><span class="grey">:</span></h2>
+        <div>
+            <p class="titre_projet">Titre du projet: Next Gen</p>
+            <img src="../img/Next Gen.png" alt="">
+            <p class="collaborateurs">Collaborateurs:<br>- Theo Petitimbert<br>- Anaïs Vanderplaetsen</p>
+            <p class="paragraph">Lors de ce projet nous avons travaillés en partenaria avec Trashback sur la question de comment agir sur les déchets dans la nature. Trashbak est une entreprise qui a conçu une application incitant tout un chacun à récolter des déchets dans l'environnement urbain en promettant des gratifications pour chaque déchets déposés dans les poubelles. Nous avons voulu améliorer cette application pour la rendre plus ludique. Nous avons donc modifié l'interface et l'expérience utilisateur en simplifiant son utilisation tout en ajoutant un certain nombre de nouvelles fonctionnalités utiles.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2><span class="purple">def</span> <span class="orange">project_4()</span><span class="grey">:</span></h2>
+        <div>
+            <p class="titre_projet">Titre du projet: Caméra Sauveuse</p>
+            <img src="../img/Mobotix.png" alt="">
+            <p class="collaborateurs">Collaborateurs:<br>- Benjamin Corral<br>- Ariana Sauvan</p>
+            <p class="paragraph">Lors de ce projet nous avons travaillés en partenariat avec Mobotix pour penser une nouvelle utilisation futur de leurs caméras qui sont à la pointe de la technologie, combinant l'analyse d'image (grâce à l'IA) et les différentes visions (normal, thermique...). Nous avons donc pensés à utiliser leurs caméras dans des situations de danger. Nous avons choisi le sujet des catastrophes, des risques et des menaces avant de se spécialiser sur les feux de forêts. Notre idées finales étant de mettre en place une surveillance accru et efficace de zones prédéterminées qui serais à risque, ainsi que d'aider à l'évacuation de la zone si un danger à été détecté.</p>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="#about">A propos</a>
+            <a href="#contact">Contacter</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+        </nav>
+        <p>&copy; 2025 - Mon Portfolio</p>
+    </footer>
+    <script src="../javascript/main.js"></script> 
+</body>
+</html>

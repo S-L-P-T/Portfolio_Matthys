@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ingénieur Informatique & Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e1e2f, #2e2e4f);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: #33334d;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transform: translateY(-100%);
+        }
+        h1, h2 {
+            font-weight: 700;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        #skills li {
+            background: #444466;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .project {
+            display: inline-block;
+            margin: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.1);
+        }
+        .project img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #202033;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #66ccff;
+        }
+        button {
+            background: #4a4a6a;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #666699;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <p>Ingénieur Informatique & Designer</p>
+    </header>
+
+    <section id="about">
+        <h2>À Propos de Moi</h2>
+        <p>Je suis un ingénieur informatique passionné et designer créatif avec plusieurs projets réussis dans ces domaines. Mon but est de réaliser des projets qui allient technologie et esthétique.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <ul>
+            <li>Informatique : Développement web, Programmation, Systèmes embarqués</li>
+            <li>Design : UX/UI, Branding, Illustration</li>
+        </ul>
+        <button onclick="downloadPortfolio()">Télécharger mon Portfolio</button>
+    </section>
+
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="project" onclick="expandImage('project1')">
+            <img src="project1.jpg" alt="Projet 1">
+            <p>Projet Informatique - Application de Gestion</p>
+        </div>
+        <div class="project" onclick="expandImage('project2')">
+            <img src="project2.jpg" alt="Projet 2">
+            <p>Design Graphique - Identité Visuelle</p>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="#about">A propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+        </nav>
+        <p>&copy; 2025 - Mon Portfolio</p>
+    </footer>
+
+    <script>
+        function downloadPortfolio() {
+            window.location.href = 'portfolio.pdf';
+        }
+
+        function expandImage(projectId) {
+            alert('Affichage agrandi pour ' + projectId);
+        }
+
+        // Animation simple pour header
+        window.onload = () => {
+            const header = document.querySelector('header');
+            header.style.transition = 'transform 1s';
+            header.style.transform = 'translateY(0)';
+        }
+    </script>
+</body>
+</html>
